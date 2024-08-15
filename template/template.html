@@ -1,0 +1,39 @@
+<!-- This only for copy to new page -->
+
+<!DOCTYPE html>
+<html lang="zh_tw">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TEMPLATE</title>
+        <link rel="stylesheet" href="/template/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+                $(document).ready(function(){
+                    $("#ad").load("/template/ad.html", function() {});
+                    $("#navbar").load("/template/nav.html", function() {});
+                    $("#footer").load("/template/footer.html", function() {});
+                    $("#chatbox").load("/template/chatbox.html", function() {});
+                    $("#side").load("/template/side.html", function() {});
+                })
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+        <div id="row">
+            <div id="side"></div>
+            <div id="main">
+                 
+                <h1 id="title">Page Title</h1>
+                <p id="date">Date:xx/xx/xx</p>
+                <p id="inside">put your inside here.</p>
+
+                <div id="chatbox"></div>
+            </div>
+            <div id="ad"></div>
+        </div>
+        
+        <div id="footer"></div>
+    </body>
+    </html>

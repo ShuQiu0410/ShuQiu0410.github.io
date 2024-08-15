@@ -1,0 +1,57 @@
+#row{
+    display: flex;
+}
+
+#side{
+    width: 20%;
+    float: left;
+    text-align: left;
+    background-color: bisque;
+}
+
+#date{
+    font-size: 18px;
+    text-align:end;
+}
+
+#title{
+    text-align: justify;
+    text-align: center;
+    font-size: 40px;
+}
+#inside{
+    font-size: 20px;
+    letter-spacing: normal;
+    padding-left: 13px;
+}
+#inside::first-letter{
+    font-size: 50px;
+    font-style: italic;
+}
+
+#ad{
+    width : 20%;
+    
+    float: left;
+    text-align: center;
+    background-color: aqua;
+
+}
+#main{
+    width: 60%;
+    float: left;
+    background-color:rgb(213, 255, 255);
+}
+#row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media(max-width: 600px){
+    #side,#main,#ad{
+        width:100%;
+    }
+    #row{
+        display: block;
+    }
+}

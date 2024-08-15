@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                $("#navbar").load("/template/nav.html", function() {});
+                $("#footer").load("/template/footer.html", function() {});
+            })
+    </script>
+</head>
+<body>
+    <nav id="navbar"></nav>
+    <div id="main">
+        <h1>Who Am I ?</h1>
+        <h2>I'm a people who like game and come from Taiwan</h2>
+
+    </div>
+    <footer id="footer"></footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+#side{
+    width : 20%;
+    
+    float: left;
+    text-align: center;
+    /* Only for debug */
+    background-color: aqua;
+
+}
+#main{
+    width: 80%;
+    float: left;
+    background-color:rgb(213, 255, 255);
+}
+#row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media(max-width: 600px){
+    #side,#main{
+        width:100%;
+    }
+}
