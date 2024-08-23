@@ -12,6 +12,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script>
                 $(document).ready(function(){
+                    //$("#head").load("/template/head.html", function() {});
                     $("#ad").load("/template/ad.html", function() {});
                     $("#navbar").load("/template/nav.html", function() {});
                     $("#footer").load("/template/footer.html", function() {});
@@ -19,9 +20,11 @@
                     $("#side").load("/template/side.html", function() {});
                 })
         </script>
+        <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-65409.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="head"></div>
         <div id="navbar"></div>
         <div id="row">
             <div id="side"></div>
@@ -29,7 +32,7 @@
                  
                 <h1 id="title">Page Title</h1>
                 <p id="date">Date:xx/xx/xx</p>
-                <p id="inside">put your inside here.</p>
+                <p id="inside" class="jf-openhuninn">put your inside here.</p>
 
                 <div id="chatbox"></div>
             </div>

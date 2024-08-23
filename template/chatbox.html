@@ -1,5 +1,5 @@
-<div id="btn_oc">
-    <img src="img.png" alt="" width="600px" onclick="open_cb()">
+<div id="btn_oc" style="text-align: center; ">
+    <img src="/template/img.png" alt="" style="max-width:80% ;height:auto ; border-radius: 30px;" onclick="open_cb()">
 </div>
 
 
@@ -15,7 +15,7 @@
     };
     
     function open_cb(){
-        if(confirm("訊息")){         
+        if(confirm("請和平交流，理性討論。\n留言板評論皆不代表版主，如感不適，敬請見諒")){         
             document.getElementById("btn_oc").remove();
             (function() { // DON'T EDIT BELOW THIS LINE
             var d = document, s = d.createElement('script');
@@ -23,6 +23,7 @@
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
             })();
+            document.getElementById("disqus_thread").style.borderColor = "rgba(0,0,0,0.3)";
         }else{
             
         }

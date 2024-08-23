@@ -1,0 +1,42 @@
+.head ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+  }
+
+.head li span{
+  color:#ffffff;
+  padding: 14px 30px;
+  font-size: 20px;
+  display: block;
+  
+}
+.head  li {
+    float: inline-start;
+    width: 16.6%;
+  }
+  
+.head  li a {
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+@keyframes hover_color{
+0%{ background-color: #444; }
+50%{background-color: #222;}
+100%{background-color: #000;}
+}
+
+  /* Change the link color to #111 (black) on hover */
+.head  li a:hover {
+    animation-name: hover_color;
+    animation-duration: 300ms;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+  }
