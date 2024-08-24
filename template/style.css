@@ -4,6 +4,7 @@
 }
 body{
     cursor: url();
+    background-color:rgb(213, 255, 255);
 }
 #side{
     width: 00%;
@@ -26,6 +27,7 @@ body{
     font-size: 20px;
     letter-spacing: 1.5px ;
     padding-left: 13px;
+    text-align: justify;
     
 
 }
@@ -42,10 +44,9 @@ body{
 }
 
 #ad{
-    width : 0%;
+    width : 20%;
     float: left;
     text-align: center;
-    background-color: aqua;
     
 }
 
@@ -61,9 +62,9 @@ body{
 }
 
 #main{
-    width: 100%;
+    width: 80%;
     float: left;
-    background-color:rgb(213, 255, 255);
+    
 }
 #row::after{
     content: "";

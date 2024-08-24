@@ -6,6 +6,10 @@
     background-color: #000;
   }
 
+.mobile{
+  visibility: hidden;
+  max-height: 0;
+}
 .head li span{
   color:#ffffff;
   padding: 14px 30px;
@@ -23,7 +27,7 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 7px;
     text-decoration: none;
   }
 
@@ -40,3 +44,34 @@
     animation-direction: alternate-reverse;
     animation-fill-mode: forwards;
   }
+
+
+
+@media (max-width: 600px) {
+    .web{
+      visibility: hidden;
+      max-height: 0;
+    }
+    .mobile{
+      visibility: visible;
+      max-height: 50px;
+      transition:max-height 2s;
+    }
+    .head li{
+      width: 100%;
+    }
+    .ham{
+      display: flex;
+      
+    }
+    .nevitem{
+      margin-right: auto;
+    }
+    .hhh{
+      display: flex;
+    }
+}
+
+.open{
+  max-height: 340px;
+}
