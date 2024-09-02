@@ -7,10 +7,10 @@ body{
     background-color:rgb(213, 255, 255);
 }
 #side{
-    width: 00%;
+    width: 20%;
     float: left;
     text-align: left;
-    background-color: bisque;
+    background-color: rgba(92, 255, 255, 0.3);
 }
 
 #date{
@@ -62,7 +62,7 @@ body{
 }
 
 #main{
-    width: 80%;
+    width: 60%;
     float: left;
     
 }
@@ -71,7 +71,46 @@ body{
     display: table;
     clear: both;
 }
+.list{
+    font-size: 20px;
+}
+.list img{
+    width: 55%;
+}
+#side div{
+    text-align: center;
+    
+    font-size: 25px;
+    
+}
+#side div a:visited{
+    color: brown;
+}
+#side div a:active{
+    color:blue;
+  
+}
+#side div a:link{
+    color: blueviolet;
+    text-decoration: none;
+}
 
+#side div a:hover{
+    font-size: 30px;
+    transition: font-size 1s;
+}
+@media (max-width:1000px) {
+    #main{
+        width:80%;
+    }
+    #side{
+        width:0%;
+        visibility: hidden;
+    }
+    .list img{
+        width: 70%;
+    }
+}
 
 @media(max-width: 600px){
     #side,#main,#ad{
@@ -80,5 +119,28 @@ body{
     #row{
         display: block;
     }
+    .list img{
+        width: 90%;
+    }
+}
+
+#inside {
+  font-family: "Noto Serif TC", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+
+.side-title{
+    text-align:center;
     
+    font-size: large;
+    font-family:"Noto Serif TC",serif;
+
+}
+.cat{
+    width: 100%;
+    height: 100%;
 }
