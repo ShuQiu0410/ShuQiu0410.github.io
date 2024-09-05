@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_tw">
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9773029056693360"
      crossorigin="anonymous"></script>
     <meta charset="UTF-8">
+    <meta name="description" content="ShuQiu的網站，放置一些想分享的東西，歡迎光臨">
+    <meta name="keywords" content="Blog, Games, Shuqiu">
+    <meta name="author" content="ShuQiu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,18 +16,28 @@
                 $("#navbar").load("/template/nav.html", function() {});
                 $("#footer").load("/template/footer.html", function() {});
                 $("#chatbox").load("/template/chatbox.html", function() {});
-
+                $("#side").load("/template/side.html", function() {});
             })
     </script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/template/style.css">
 </head>
 <body>
     <div id="navbar"></div>
     <div id="row">
+        <div id="side"></div>
         <div id="main">
+            <br><br>
             <div style="text-align: center;">
-                <h1 style="font-size:50px ;">Welcome</h1>
-                <h2>短簡介</h2>
+                <h1 style="font-size:40px ;">Welcome To ShuQiu's Blog</h1>
+                <h2>這裡就是存放我想分享的事物，無拘無束。</h2>
+                <br><br>
+                <a href="/aboutme.html" style="font-size:25px;">還不了解我嗎？ 點我前往介紹</a>
+                <br><br>
+                <p class="sub-title">最新文章</p>
+                <div style="text-align: center;" class="list">
+                    <a href="https://shuqiu0410.github.io/weekly/2024/2024-36.html" style="text-align: center;"><img src="/weekly/img/StockSnap_04HR3ASS4J.jpg" alt="" width="50%"></a>
+                    <br><span><a href="/weekly/2024/2024-36.html">第36週-架設網站</a></span>
+                </div>
             </div>
             <br>
             <div id="chatbox"></div>
